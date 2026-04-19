@@ -6,7 +6,10 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import PropertyExplorer from "@/components/PropertyExplorer";
 
-export default function Home() {
+export default async function Home({ searchParams }) {
+  const params = await searchParams;
+  const ctaForm = params?.form === "list" ? "list" : "buy";
+
   return (
     <main className="bg-[var(--background)] text-[var(--foreground)]">
       <Navbar />
@@ -14,7 +17,7 @@ export default function Home() {
       <AboutSection />
       <PropertyExplorer compact showViewMore />
       <GallerySection />
-      <CtaSection />
+      <CtaSection initialForm={ctaForm} />
       <Footer />
     </main>
   );
