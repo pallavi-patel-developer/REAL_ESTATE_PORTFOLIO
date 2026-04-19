@@ -4,7 +4,7 @@ const navItems = [
   { label: "Home", href: "/#home" },
   { label: "About Us", href: "/#about" },
   { label: "Properties", href: "/properties" },
-  { label: "Lets Talk", href: "/lets-talk" },
+  { label: "Let's Talk", href: "/?form=buy#faq" },
   { label: "Gallery", href: "/gallery" },
   { label: "FAQ's", href: "/#faq" },
 ];
@@ -34,7 +34,7 @@ export default function Navbar() {
               ))}
             </nav>
 
-            <Link href="/properties" className="primary-button">
+            <Link href="/#faq" className="primary-button">
               Contact Us
             </Link>
           </div>

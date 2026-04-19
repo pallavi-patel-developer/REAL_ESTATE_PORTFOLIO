@@ -10,8 +10,7 @@ export const properties = [
     areaValue: 2200,
     beds: "4 Beds",
     baths: "2 Baths",
-    image:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80",
+    image: "/images/oakwood-family-home.jpg",
   },
   {
     id: "maple-grove-residence",
@@ -24,8 +23,7 @@ export const properties = [
     areaValue: 1980,
     beds: "3 Beds",
     baths: "2 Baths",
-    image:
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80",
+    image: "/images/maple-grove-residence.jpg",
   },
   {
     id: "sunnyvale-gardens",
@@ -38,8 +36,7 @@ export const properties = [
     areaValue: 1850,
     beds: "3 Beds",
     baths: "2 Baths",
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80",
+    image: "/images/sunnyvale-gardens.jpg",
   },
   {
     id: "coastal-breeze-villa",
@@ -52,8 +49,7 @@ export const properties = [
     areaValue: 1950,
     beds: "3 Beds",
     baths: "2 Baths",
-    image:
-      "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=900&q=80",
+    image: "/images/coastal-breeze-villa.jpg",
   },
   {
     id: "willow-creek-estate",
@@ -66,8 +62,7 @@ export const properties = [
     areaValue: 2450,
     beds: "4 Beds",
     baths: "3 Baths",
-    image:
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80",
+    image: "/images/willow-creek-estate.jpg",
   },
   {
     id: "modern-haven-loft",
@@ -80,8 +75,7 @@ export const properties = [
     areaValue: 2100,
     beds: "3 Beds",
     baths: "2 Baths",
-    image:
-      "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=900&q=80",
+    image: "/images/modern-haven-loft.jpg",
   },
   {
     id: "harbor-view-house",
@@ -94,8 +88,7 @@ export const properties = [
     areaValue: 2650,
     beds: "4 Beds",
     baths: "3 Baths",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    image: "/images/harbor-view-house.jpg",
   },
   {
     id: "riverstone-apartment",
@@ -108,8 +101,7 @@ export const properties = [
     areaValue: 1420,
     beds: "2 Beds",
     baths: "2 Baths",
-    image:
-      "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
+    image: "/images/riverstone-apartment.jpg",
   },
   {
     id: "cedar-park-villa",
@@ -122,8 +114,7 @@ export const properties = [
     areaValue: 2980,
     beds: "5 Beds",
     baths: "4 Baths",
-    image:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=80",
+    image: "/images/cedar-park-villa.jpg",
   },
 ];
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const buyInitialState = {
   name: "",
@@ -21,11 +22,18 @@ const listInitialState = {
 };
 
 export default function CtaSection() {
-  const [activeForm, setActiveForm] = useState("buy");
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [buyForm, setBuyForm] = useState(buyInitialState);
   const [listForm, setListForm] = useState(listInitialState);
   const [uploadedFiles, setUploadedFiles] = useState([]);
   const [uploadMessage, setUploadMessage] = useState("");
+  const activeForm = searchParams.get("form") === "list" ? "list" : "buy";
+
+  const switchForm = (form) => {
+    router.replace(`${pathname}?form=${form}#faq`, { scroll: false });
+  };
 
   const handleBuyChange = (event) => {
     const { name, value } = event.target;
@@ -85,7 +93,7 @@ export default function CtaSection() {
             <div className="mt-8 flex flex-wrap gap-3">
               <button
                 type="button"
-                onClick={() => setActiveForm("buy")}
+                onClick={() => switchForm("buy")}
                 className={
                   activeForm === "buy"
                     ? "filter-pill filter-pill-active"
@@ -96,7 +104,7 @@ export default function CtaSection() {
               </button>
               <button
                 type="button"
-                onClick={() => setActiveForm("list")}
+                onClick={() => switchForm("list")}
                 className={
                   activeForm === "list"
                     ? "filter-pill filter-pill-active"
